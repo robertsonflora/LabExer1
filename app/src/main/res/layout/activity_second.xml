@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.robertson.labexer1.SecondActivity">
+
+    <EditText
+        android:id="@+id/ra"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/btnBack"
+        android:layout_alignStart="@+id/btnBack" />
+
+    <EditText
+        android:id="@+id/fg"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_marginTop="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignRight="@+id/ra"
+        android:layout_alignEnd="@+id/ra" />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@+id/fg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="goBackToMain"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="You RA is:"
+        android:layout_alignBottom="@+id/ra"
+        android:layout_toLeftOf="@+id/ra"
+        android:layout_toStartOf="@+id/ra" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your final grade is:"
+        android:layout_alignBottom="@+id/fg"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.robertson.labexer1.MainActivity">
+
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:id="@+id/q2"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="302dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/q1"
+        android:layout_alignLeft="@+id/q1"
+        android:layout_alignStart="@+id/q1" />
+
+    <EditText
+        android:id="@+id/seatWorks"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="233dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/q2"
+        android:layout_alignLeft="@+id/q2"
+        android:layout_alignStart="@+id/q2" />
+
+    <EditText
+        android:id="@+id/labExercises"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="152dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/seatWorks"
+        android:layout_alignLeft="@+id/seatWorks"
+        android:layout_alignStart="@+id/seatWorks" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="433dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:onClick="callSecondActivity"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteY="84dp"
+        tools:layout_editor_absoluteX="163dp"
+        android:id="@+id/majorExam"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/labExercises"
+        android:layout_alignLeft="@+id/labExercises"
+        android:layout_alignStart="@+id/labExercises" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1"
+        android:layout_alignBottom="@+id/q1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignTop="@+id/q2"
+        android:text="Quiz 2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignTop="@+id/seatWorks"
+        android:text="Seatworks" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignTop="@+id/labExercises"
+        android:text="Lab  Exercises" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Exam"
+        android:layout_alignTop="@+id/majorExam"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+</RelativeLayout>
